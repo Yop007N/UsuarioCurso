@@ -1,0 +1,53 @@
+
+
+1. **Listar todos los usuarios (GET):**
+   - Método: GET
+   - URL: `http://localhost:8001/usuarios`
+   - En Postman, selecciona el método GET y proporciona la URL mencionada.
+   - Haz clic en el botón "Send" para realizar la solicitud.
+
+2. **Obtener un usuario por ID (GET):**
+   - Método: GET
+   - URL: `http://localhost:8001/usuarios/{id}`
+   - Sustituye `{id}` con un ID válido de un usuario existente.
+   - Haz clic en el botón "Send" para realizar la solicitud.
+
+3. **Crear un nuevo usuario (POST):**
+   - Método: POST
+   - URL: `http://localhost:8001/usuarios`
+   - En Postman, selecciona el método POST y proporciona la URL mencionada.
+   - Ve a la pestaña "Body" y selecciona "raw". Ingresa los datos del nuevo usuario en formato JSON. Ejemplo:
+     ```json
+     {
+       "nombre": "Nuevo Usuario",
+       "correo": "nuevo@usuario.com",
+       "telefono": "123456789",
+       "edad": 25,
+       "saldo": 100.0
+     }
+     ```
+   - Haz clic en el botón "Send" para realizar la solicitud.
+
+4. **Actualizar un usuario por ID (PUT):**
+   - Método: PUT
+   - URL: `http://localhost:8001/usuarios/{id}`
+   - Sustituye `{id}` con el ID de un usuario existente que desees actualizar.
+   - En Postman, selecciona el método PUT y proporciona la URL mencionada.
+   - Ve a la pestaña "Body" y selecciona "raw". Ingresa los datos actualizados del usuario en formato JSON. Ejemplo:
+     ```json
+     {
+       "nombre": "Usuario Actualizado",
+       "correo": "actualizado@usuario.com",
+       "telefono": "987654321",
+       "edad": 30,
+       "saldo": 150.0
+     }
+     ```
+   - Haz clic en el botón "Send" para realizar la solicitud.
+
+5. **Eliminar un usuario por ID (DELETE):**
+   - Método: DELETE
+   - URL: `http://localhost:8001/usuarios/{id}`
+   - Sustituye `{id}` con el ID de un usuario existente que desees eliminar.
+   - En Postman, selecciona el método DELETE y proporciona la URL mencionada.
+   - Haz clic en el botón "Send" para realizar la solicitud.
